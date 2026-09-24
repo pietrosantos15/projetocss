@@ -1,0 +1,239 @@
+/* Configuração geral */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222;
+}
+
+
+/* Cabeçalho */
+
+header {
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid #222;
+    text-align: center;
+    background-color: white;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+
+/* Menu */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    margin: 20px 10px;
+    padding: 15px;
+    border: 2px solid #222;
+
+    background-color: #222;
+}
+
+nav a {
+    margin: 5px;
+    padding: 8px;
+
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Início */
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 10px;
+    padding: 40px;
+
+    border: 2px solid #222;
+
+    background-color: white;
+}
+
+.inicio h2 {
+    margin: 0 0 15px;
+    padding: 5px;
+}
+
+.inicio p {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    border: 2px solid #222;
+
+    background-color: #222;
+    color: white;
+}
+
+.icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 180px;
+    height: 180px;
+
+    margin: 10px;
+    padding: 20px;
+
+    border: 2px solid #222;
+
+    background-color: #eeeeee;
+
+    font-size: 70px;
+}
+
+
+/* Sobre */
+
+.sobre {
+    margin: 20px 10px;
+    padding: 25px;
+
+    border: 2px solid #222;
+
+    background-color: white;
+}
+
+.sobre h2 {
+    margin-top: 0;
+}
+
+
+/* Projetos */
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin: 20px 10px;
+    padding: 25px;
+
+    border: 2px solid #222;
+
+    background-color: white;
+}
+
+.projeto {
+    flex: 1 1 200px;
+
+    margin: 5px;
+    padding: 20px;
+
+    border: 2px solid #555;
+
+    background-color: #f5f5f5;
+}
+
+.projeto h3 {
+    margin-top: 0;
+}
+
+
+/* Habilidades */
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px 10px;
+    padding: 25px;
+
+    border: 2px solid #222;
+
+    background-color: white;
+}
+
+.habilidades h2 {
+    margin: 0 0 15px;
+}
+
+.habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 0;
+    padding: 10px;
+}
+
+.habilidades li {
+    margin: 5px;
+    padding: 10px 20px;
+
+    border: 2px solid #222;
+
+    list-style: none;
+}
+
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 10px 0;
+    padding: 20px;
+
+    border: 2px solid #222;
+
+    background-color: #222;
+    color: white;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projetos {
+        flex-direction: column;
+    }
+
+    .icone {
+        width: 140px;
+        height: 140px;
+    }
+}
