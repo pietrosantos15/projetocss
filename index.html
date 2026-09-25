@@ -1,84 +1,318 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+
+    <title>Luxury Motors</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Meu Site</h1>
-        <p>Desenvolvimento de Sistemas</p>
+    <!-- MENU -->
+    <header class="header">
+
+        <nav class="nav">
+
+            <h1 class="logo">
+                LUXURY<span>MOTORS</span>
+            </h1>
+
+            <div class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#carros">Carros</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+        </nav>
+
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
-    </nav>
 
-    <main>
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
 
-        <section class="inicio">
-            <div>
-                <h2>Olá!</h2>
-                <p>
-                    Meu nome é Pedro e sou estudante de
-                    Desenvolvimento de Sistemas.
+        <div class="efeito efeito1"></div>
+        <div class="efeito efeito2"></div>
+
+        <div class="hero-conteudo">
+
+            <div class="hero-texto">
+
+                <p class="subtitulo">
+                    EXCLUSIVIDADE SOBRE RODAS
                 </p>
-                <button>Conheça meu trabalho</button>
+
+                <h2>
+                    O luxo
+                    <span>não espera.</span>
+                </h2>
+
+                <p class="descricao">
+                    Descubra alguns dos carros mais desejados,
+                    rápidos e exclusivos do mundo.
+                </p>
+
+                <div class="botoes">
+
+                    <a href="#carros" class="botao vermelho">
+                        Ver coleção
+                    </a>
+
+                    <a href="#sobre" class="botao transparente">
+                        Conheça
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="icone">💻</div>
-        </section>
 
-        <section class="sobre">
-            <h2>Sobre mim</h2>
-            <p>
-                Gosto de programação, desenvolvimento web,
-                banco de dados e tecnologia.
+            <div class="hero-imagem">
+
+                <img
+                    src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1200&q=80"
+                    alt="Ferrari">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARROS -->
+    <section id="carros" class="carros">
+
+        <div class="titulo-secao">
+
+            <p class="subtitulo">
+                NOSSA COLEÇÃO
             </p>
-        </section>
 
-        <section class="projetos">
+            <h2>
+                Máquinas extraordinárias
+            </h2>
 
-            <div class="projeto">
-                <h3>OrtoFix</h3>
-                <p>Projeto educacional com inteligência artificial.</p>
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- FERRARI -->
+            <div class="card">
+
+                <div class="imagem-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=900&q=80"
+                        alt="Ferrari">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                    <p class="marca ferrari">
+                        FERRARI
+                    </p>
+
+                    <h3>
+                        Purosangue
+                    </h3>
+
+                    <p>
+                        O primeiro SUV de quatro portas da Ferrari,
+                        combinando luxo, potência e exclusividade.
+                    </p>
+
+                    <div class="informacoes">
+
+                        <span>V12</span>
+
+                        <strong>725 CV</strong>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="projeto">
-                <h3>EmpreGO</h3>
-                <p>Sistema para gerenciamento de oportunidades.</p>
+
+            <!-- LAMBORGHINI -->
+            <div class="card">
+
+                <div class="imagem-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=900&q=80"
+                        alt="Lamborghini">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                    <p class="marca lamborghini">
+                        LAMBORGHINI
+                    </p>
+
+                    <h3>
+                        Aventador
+                    </h3>
+
+                    <p>
+                        Design agressivo, motor V12 e desempenho
+                        digno de uma verdadeira supermáquina.
+                    </p>
+
+                    <div class="informacoes">
+
+                        <span>V12</span>
+
+                        <strong>770 CV</strong>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="projeto">
-                <h3>Web</h3>
-                <p>Projetos utilizando HTML, CSS e JavaScript.</p>
+
+            <!-- PORSCHE -->
+            <div class="card">
+
+                <div class="imagem-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                        alt="Porsche">
+
+                </div>
+
+                <div class="card-conteudo">
+
+                    <p class="marca porsche">
+                        PORSCHE
+                    </p>
+
+                    <h3>
+                        911 Turbo S
+                    </h3>
+
+                    <p>
+                        Precisão alemã, desempenho brutal e um
+                        design que atravessa gerações.
+                    </p>
+
+                    <div class="informacoes">
+
+                        <span>3.7L</span>
+
+                        <strong>650 CV</strong>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </section>
+        </div>
 
-        <section class="habilidades">
-            <h2>Habilidades</h2>
+    </section>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-            </ul>
-        </section>
 
-    </main>
+    <!-- DESTAQUE -->
+    <section class="destaque">
 
+        <div class="destaque-conteudo">
+
+            <div>
+
+                <p class="subtitulo">
+                    FERRARI PUROSANGUE
+                </p>
+
+                <h2>
+                    Feita para
+                    <br>
+                    ser diferente.
+                </h2>
+
+                <p>
+                    Uma combinação rara de desempenho esportivo,
+                    conforto e exclusividade.
+                </p>
+
+                <button class="botao preto">
+                    Conhecer veículo
+                </button>
+
+            </div>
+
+
+            <img
+                src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1200&q=80"
+                alt="Ferrari Purosangue">
+
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+
+        <p class="subtitulo">
+            LUXURY MOTORS
+        </p>
+
+        <h2>
+            Mais que carros.
+            <span>Uma experiência.</span>
+        </h2>
+
+        <p>
+            Trabalhamos com uma seleção de veículos que representam
+            o mais alto nível de engenharia, design e exclusividade.
+            Cada carro é escolhido para pessoas que não aceitam o comum.
+        </p>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+
+        <div class="contato-box">
+
+            <h2>
+                Encontre seu próximo carro
+            </h2>
+
+            <p>
+                Entre em contato para conhecer nossa coleção exclusiva.
+            </p>
+
+            <button class="botao vermelho">
+                Entrar em contato
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
     <footer>
-        <p>© 2026 - Meu Site</p>
+
+        <p>
+            © 2026 Luxury Motors — Todos os direitos reservados.
+        </p>
+
     </footer>
 
 </body>
